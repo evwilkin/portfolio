@@ -36,10 +36,12 @@ div.title h4 {
 
 header {
   position: relative;
-  height: 600px;
+  height: 100vh;
+}
+
+
   background-size: auto 600px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top center;
   background-image: url("../images/GA_Headshot.jpg")
-}
