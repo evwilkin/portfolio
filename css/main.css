@@ -1,5 +1,5 @@
 @font-face {
-    font-family:"Lora-Regular";
+    font-family:"Lora-Regular", cursive;
     src: url("Lora-Regular.ttf")
 }
 
@@ -15,6 +15,20 @@ body {
 
 img {
   width: 100%;
+}
+
+h1 {
+  font-family: 'Alfa Slab One', serif;
+}
+
+p {
+  /*font-family: 'Lora-Regular', cursive;*/
+  font-size: 2em;
+}
+
+#portrait {
+  float: right;
+  width: 40%;
 }
 
 i,a.brand-logo, nav ul li a {
@@ -46,7 +60,7 @@ div.title {
 }
 
 h4.webdev {
-  font-family: 'Lora-Regular', serif;
+  font-family: 'Lora-Regular', cursive;
   font-size: 4em;
   margin-top: -50px;
   text-align: center;
