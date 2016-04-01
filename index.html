@@ -4,20 +4,24 @@
   <title>Evan Wilkinson</title>  
   <!-- Compiled and minified CSS -->
   <link href='https://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.8/jquery.fullPage.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
   <!-- Navbar -->
   <nav class="z-depth-0">
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Evan Wilkinson</a>
+      <a href="#home" class="hide brand-logo">Evan Wilkinson</a>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="nav right hide-on-med-and-down">
+        <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
+        <li data-menuanchor="about"><a href="#about">About</a></li>
+        <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
       </ul>
       <ul class="side-nav" id="nav-mobile">
         <li><a href="#portfolio">Portfolio</a></li>
@@ -28,32 +32,75 @@
   </nav>
 
   <!-- Body -->
-  <header>
-    <div class="title">
-      <h1 class="evan">Evan Wilkinson</h1>
-      <h4 class="webdev">Web Developer</h4>
+  <div id="fullpage">
+    <div class="container">
+      <header id="home" class="section">
+        <div class="title">
+          <h4 class="webdev">Developer, Designer, Doer.</h4>
+          <h1 class="evan">Evan <br />Wilkinson</h1>
+        </div>
+      </header>
+     
+      <section id="portfolio" class="section">
+        <h1>Projects</h1>
+        <img src="images/Bankly.png" />
+        <img src="images/AdventureTo.png" />
+        <img src="images/restaurant-week.png" />
+        <img src="images/state-facts.png" />
+        <img src="images/honeymoon.png" />
+      </section>
+
+      <section id="about" class="section">
+        <h1>About Evan</h1>
+        <p>Thanks for asking!  I've been creative my whole life, </p>
+        <div>
+          <i class="icon devicon-angularjs-plain-wordmark"></i>
+          <i class="icon devicon-bootstrap-plain-wordmark"></i>
+          <i class="icon devicon-css3-plain-wordmark"></i>
+          <i class="icon devicon-github-plain-wordmark"></i>
+          <i class="icon devicon-gulp-plain"></i>
+          <i class="icon devicon-heroku-original-wordmark"></i>
+          <i class="icon devicon-html5-plain-wordmark"></i>
+          <i class="icon devicon-javascript-plain"></i>
+          <i class="icon devicon-jquery-plain-wordmark"></i>
+          <i class="icon devicon-mongodb-plain-wordmark"></i>
+          <i class="icon devicon-nodejs-plain-wordmark"></i>
+          <i class="icon devicon-photoshop-plain"></i>
+          <i class="icon devicon-postgresql-plain-wordmark"></i>
+          <i class="icon devicon-rails-plain-wordmark"></i>
+          <i class="icon devicon-react-original-wordmark"></i>
+          <i class="icon devicon-ruby-plain-wordmark"></i>
+
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h1>Contact me</h1>
+        <p>Please feel free to connect with me, I look forward to what we can create together.</p>
+        <a href="mailto:evan.wilkinson@gmail.com">
+          <i class="fa fa-envelope">Send an Email</i>
+        </a>
+        <a href="https://www.linkedin.com/in/evan-wilkinson-57394466
+">
+          <i class="fa fa-linkedin-square">LinkedIn</i>
+        </a>
+        <a href="https://github.com/evwilkin">
+          <i class="fa fa-github">Github</i>
+        </a>
+      </section>
+
+      <footer>
+        <div id="bottom"></div>
+      </footer>
+
     </div>
-  </header>
+  </div>
 
-  <section id="about">
-    <h1>About Evan</h1>
-    <p>Thanks for asking!  I've been creative my whole life, </p>
-  </section>
-
-  <section id="portfolio">
-
-  </section>
-
-  <section id="contact">
-
-  </section>
-
-  <footer>
-    <div id="bottom"></div>
-  </footer>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
   <script src="https://code.jquery.com/jquery.js"></script>
+  <script type="text/javascript" src="js/smooth-scroll.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.8/jquery.fullPage.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
