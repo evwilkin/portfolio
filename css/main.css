@@ -14,8 +14,7 @@ body {
 }
 
 img {
-  width: 40%;
-  margin: 0 4%;
+  width: 100%;
 }
 
 i,a.brand-logo, nav ul li a {
