@@ -9,12 +9,15 @@ $(document).ready(function(){
     resize: true
   });
 
+  // Fade in home page
+  $("#developer").fadeIn(1000).delay(1000).removeClass("hide");
+  $("#designer").fadeIn(1500).delay(1200).removeClass("hide");
+  $("#doer").fadeIn(2000).delay(1500).removeClass("hide");
+
   // Add home button to navbar when home page not displayed
   var headerHeight = $("header").height();
   $(window).scroll(function() {
-    console.log(headerHeight);
     var wScroll = $(window).scrollTop();
-    console.log(wScroll);
     if (wScroll >= headerHeight - 100) {
       $("a.brand-logo").fadeIn(350).removeClass("hide");
     } else {
@@ -23,10 +26,14 @@ $(document).ready(function(){
   });
 });
 
-var pattern = Trianglify({
-    width: window.innerWidth,
-    height: window.innerHeight
-});
-Trianglify({cell_size: 40, seed: 'ywn3w', x_colors: 'random'}).canvas()
+// var home = document.getElementById("home");
+// var dimensions = home.getClientRects()[0];
+// var pattern = Trianglify({
+//     width: dimensions.innerWidth,
+//     height: dimensions.innerHeight,
+//     cell_size: 40, 
+//     seed: 'ywn3w', 
+//     x_colors: 'random'
+// });
 
-document.body.appendChild(pattern.canvas());
+// home.appendChild(pattern.canvas());

@@ -36,29 +36,39 @@ div.title {
   visibility: hidden;
 }
 
-.show {
-  visibility: visible;
-}
-
 .evan {
   font-size: 9em;
-  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Alfa Slab One', serif;
+}
+
+.tagline {
+  position: relative;
+  top: -15%;
 }
 
 h4.webdev {
-  font-family: Lora-Regular, serif;
+  font-family: 'Lora-Regular', serif;
   font-size: 4em;
   margin-top: -50px;
   text-align: center;
 }
 
-header {
+header#home {
   position: relative;
   height: 100vh;
 }
 
-  background-size: auto 600px;
+i {
+  font-size: 3em;
+}
+
+section {
+  height: 95vh;
+  margin-top: 4vh;
+}
+
+  /*background-size: auto 600px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top center;
-  background-image: url("../images/GA_Headshot.jpg")
+  background-image: url("../images/GA_Headshot.jpg")*/
