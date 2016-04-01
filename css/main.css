@@ -1,5 +1,5 @@
 @font-face {
-    font-family:"Lora-Regular", cursive;
+    font-family:"Lora-Regular", serif;
     src: url("Lora-Regular.ttf")
 }
 
@@ -22,7 +22,7 @@ h1 {
 }
 
 p {
-  /*font-family: 'Lora-Regular', cursive;*/
+  font-family: 'Lora-Regular', serif;
   font-size: 2em;
 }
 
@@ -36,7 +36,7 @@ i,a.brand-logo, nav ul li a {
 }
 
 a.brand-logo {
-  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Alfa Slab One', serif;
 }
 
 div.title {
@@ -60,7 +60,7 @@ div.title {
 }
 
 h4.webdev {
-  font-family: 'Lora-Regular', cursive;
+  font-family: 'Lora-Regular', serif;
   font-size: 4em;
   margin-top: -50px;
   text-align: center;
