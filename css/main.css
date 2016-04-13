@@ -1,16 +1,36 @@
 @font-face {
-    font-family:"Lora-Regular", serif;
+    font-family: "Lora-Regular", serif;
     src: url("Lora-Regular.ttf")
 }
 
 nav {
-  background-color: white;
+  background-color: rgba(0,0,0,0.02);
   position: fixed;
   z-index: 10;
+  top: 0;
+}
+
+#headerButtons {
+  position: absolute;
+  right: 0;
+  bottom: 12%;
+  width: 20%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+div.navButtons {
+  width: 100%;
+  font-family: "Lora-Regular", serif;
+}
+
+.background {
+  background-color: white;
 }
 
 body {
-  height: 2000px;
+  font-family: 'Lora-Regular', serif;
+  height: 100vh;
+  width: 100%;
 }
 
 img {
@@ -23,12 +43,19 @@ h1 {
 
 p {
   font-family: 'Lora-Regular', serif;
-  font-size: 2em;
+  font-size: 1.5em;
+}
+
+#projects {
+  margin-top: 100px;
+}
+
+#projects p {
+  font-size: 1.5em;
 }
 
 #portrait {
-  float: right;
-  width: 40%;
+  margin-top: 40px;
 }
 
 i,a.brand-logo, nav ul li a {
@@ -42,7 +69,7 @@ a.brand-logo {
 div.title {
   position: absolute;
   bottom: 8%;
-  width: 100%;
+  width: auto;
 }
 
 .hide {
@@ -52,32 +79,69 @@ div.title {
 .evan {
   font-size: 9em;
   font-family: 'Alfa Slab One', serif;
+  /*margin-bottom: -5%;*/
 }
 
 .tagline {
-  position: relative;
-  top: -15%;
-}
-
-h4.webdev {
-  font-family: 'Lora-Regular', serif;
-  font-size: 4em;
-  margin-top: -50px;
-  text-align: center;
+  position: absolute;
+  bottom: 2%;
 }
 
 header#home {
   position: relative;
-  height: 100vh;
+  height: 85%;
+  width: 100%;
+  margin-top: -10%;
 }
 
 i {
-  font-size: 3em;
+  font-size: 5.2vw;
+}
+
+i.fa {
+  font-size: 30px;
+  padding: 5%;
+  color: peachpuff;
 }
 
 section {
-  height: 95vh;
-  margin-top: 4vh;
+  padding-top: 4vh;
+}
+
+#webdev {
+  font-family: 'Lora-Regular', serif;
+  font-size: 4em;
+}
+
+#about {
+  background-color: whitesmoke;
+}
+
+#contact {
+  background-color: dimgray;
+  color: gainsboro;
+}
+
+@media (max-width: 768px) {
+  header#home {
+    height: 40%;
+  }
+
+  .evan {
+    font-size: 4.5em;
+    font-family: 'Alfa Slab One', serif;
+    font-align: center;
+  }
+
+  .tagline {
+    position: absolute;
+    bottom: 2%;
+    font-size: 0.5em;
+  }
+
+  i {
+    font-size: 10vw;
+  }
 }
 
   /*background-size: auto 600px;
